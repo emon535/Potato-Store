@@ -1,4 +1,12 @@
 
+
+.shift {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
 .navbar {
     background: #411B23;
     color: white;
@@ -6,6 +14,8 @@
     justify-content: center;
     align-items: center; 
     height: 70px;
+    font-family: 'Bebas Neue', cursive;
+
     
     //border-bottom: 1px solid rgb(187, 187, 187);
     &__list-item {
@@ -16,7 +26,7 @@
         &__home-icon {
             @extend .shift;
             //border: 2px solid rgb(253, 253, 253);
-            padding: 22px;
+            padding: 20px;
             font-size: 39px;
             cursor: pointer;
             &:hover{
@@ -28,7 +38,7 @@
         &__cart-img {
         @extend .shift;
         //    justify-content: flex-end;  
-        padding: 25px;
+        padding: 20px;
         margin-left: auto;
         font-size: 30px;
             &:hover{
@@ -46,9 +56,10 @@
 
 }
 
-.shift {
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
+
+@media only screen and (max-width: 600px) {
+    img{
+        height: 200px;
+        
+    }
+  }
