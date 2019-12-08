@@ -1,23 +1,23 @@
 .product {
    // display: flex;
-    width: 350px;
+    width: 100%;
     //background: orange;
     //border: 2px solid #411B23;
     &-image {
        display: inline;;
-        max-width: 100px;
+        // max-width: 100px;
         //height: auto;
         //display: block;
         img{
-            display:block;
+            // display:block;
              margin:auto;
-            width: 300px;
-            border: 2px solid #411B23;
+            width: 100%;
+            // border: 2px solid #411B23;
         }
     }
     &__info {
-        margin: 10px;
-        border: 2px solid #411B23;
+        // margin: 10px;
+        // border: 2px solid #411B23;
         &-title {
             color: black;
         }

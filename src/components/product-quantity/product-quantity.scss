@@ -1,13 +1,19 @@
 .container {
     display: inline;
-    border: 2px solid #411B23;
-    &__button {
-
-        display: inline;
-        background: #FAFAFB;
-        background: black;
-        
-       
+    // border: 2px solid #411B23;
+    &__button  button{
+        margin: 0;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        cursor: pointer;
+        font-size: 20px;
+        background: rgb(151, 160, 153);
+    }
+    &__count {
+        font-size: 20px;
+        padding: 0px 10px 0px 10px ;
+        margin: 10px;;
     }
 
 }
