@@ -6,7 +6,7 @@ import { take } from 'lodash';
 import ApiFactory from './mock';
 import Editor from './Editor';
 
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Home from './pages/home';
 import Products from './pages/products';
 import Product from './pages/single-product';
@@ -17,9 +17,9 @@ import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
 
 export default function App() {
-  const [value, setValue ] = useState([]);
-  
-  
+  const [value, setValue] = useState([]);
+
+
   // useEffect(()=> {
   //   getAllProducts();
   //   console.log('ciaddd',value);
@@ -32,7 +32,7 @@ export default function App() {
       <Router>
         <Navbar></Navbar>
         <Switch>
-          <Route exact path ="/">
+          <Route exact path="/">
             <Home items={value}></Home>
           </Route>
           <Route path="/shopping-cart">
@@ -45,10 +45,10 @@ export default function App() {
             <Admin></Admin>
           </Route>
           <Route exact path="/admin/products/:productId" component={Product}>
-             {/*  <Product></Product> */}
+            {/*  <Product></Product> */}
           </Route>
-        
-          
+
+
 
         </Switch>
         <Footer></Footer>
@@ -65,7 +65,7 @@ export default function App() {
         //console.log(error.response);
       }).catch((error) => {
         // TODO: Display nice error message.
-       // console.log(error.response);
+        // console.log(error.response);
       });
   }
 
@@ -115,7 +115,7 @@ export default function App() {
   }
 
   function buyItems(items) {
-    ApiFactory.getInstance().post('/api/buy', { itemsToBuy: items }).then(function() {
+    ApiFactory.getInstance().post('/api/buy', { itemsToBuy: items }).then(function () {
       alert('Bought Items. This is fake API that do nothing.');
     }).catch((error) => {
       // TODO: Display nice error message.
