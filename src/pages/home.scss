@@ -1,10 +1,4 @@
-
-
-
 body {
-   // background: rgba(248, 223, 120, 0.096);
-    //background: rgba(194, 172, 121, 0.781);
-
     margin:  0px !important;
     background: rgba(236, 209, 164, 0.842);
     color: black;
@@ -16,7 +10,7 @@ body {
     &-image {
         
         background-image: url("https://cdn-prod.medicalnewstoday.com/content/images/articles/280/280579/potatoes-can-be-healthful.jpg");
-        height: 648px;
+        height: 100vh;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -38,11 +32,7 @@ body {
     }
 
     &-button {
-        box-shadow:inset 0px -3px 7px 0px #29bbff;
-        background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
         background-color:#2dabf9;
-        border-radius:3px;
-        border:1px solid #0b0e07;
         display:inline-block;
         cursor:pointer;
         color:#ffffff;
@@ -50,10 +40,11 @@ body {
         font-size:15px;
         padding:11px 38px;
         text-decoration:none;
-        text-shadow:0px 1px 0px #263666;
+        // text-shadow:0px 1px 0px #263666;
 
         &:hover {
             color:black;
+            text-decoration: underline;
         }
     }
 
@@ -64,14 +55,13 @@ body {
     background: white;
     color: black;
     align-content: center;
-    margin: 60px;
-    padding: 20px;
+    margin: 2em;
+    // padding: 30px;
     box-sizing: border-box;
     display: flex;
-     border: 2px solid #411B23;
+     border: 1px solid rgb(138, 118, 124);
     &__image{       
-
-        border: 1px solid #411B23;
+        // border: 1px solid #411B23;
         flex-wrap: wrap;
     }
     &__info {
