@@ -1,0 +1,28 @@
+.product {
+   // display: flex;
+    width: 350px;
+    //background: orange;
+    //border: 2px solid #411B23;
+    &-image {
+       display: inline;;
+        max-width: 100px;
+        //height: auto;
+        //display: block;
+        img{
+            display:block;
+             margin:auto;
+            width: 300px;
+            border: 2px solid #411B23;
+        }
+    }
+    &__info {
+        margin: 10px;
+        border: 2px solid #411B23;
+        &-title {
+            color: black;
+        }
+    }
+    
+
+
+}
