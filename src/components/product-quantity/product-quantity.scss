@@ -1,19 +1,20 @@
 .container {
-    display: inline;
-    // border: 2px solid #411B23;
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
     &__button  button{
+        color: white;
         margin: 0;
         border: none;
-        padding: 1rem 2rem;
-        font-size: 1rem;
+        padding: .5rem 1rem;
         cursor: pointer;
-        font-size: 20px;
-        background: rgb(151, 160, 153);
+        font-size: 16px;
+        background: rgb(101, 104, 102);
     }
     &__count {
-        font-size: 20px;
-        padding: 0px 10px 0px 10px ;
-        margin: 10px;;
+        font-size: 16px;
+        padding: 0px 7px 0px 7px ;
+        margin: 7px;;
     }
 
 }

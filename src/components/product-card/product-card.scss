@@ -1,28 +1,25 @@
 .product {
-   // display: flex;
     width: 100%;
-    //background: orange;
-    //border: 2px solid #411B23;
+    & .product_heading {
+        
+    }
+
     &-image {
        display: inline;;
-        // max-width: 100px;
-        //height: auto;
-        //display: block;
-        img{
-            // display:block;
-             margin:auto;
+        img {
+            margin:auto;
             width: 100%;
-            // border: 2px solid #411B23;
         }
     }
     &__info {
         // margin: 10px;
-        // border: 2px solid #411B23;
         &-title {
             color: black;
         }
+        &-price {
+            padding: 10px;
+            background-color: burlywood;;
+        }
     }
     
-
-
 }
