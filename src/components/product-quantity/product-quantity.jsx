@@ -35,10 +35,8 @@ export default function ProductQuantity({ item }) {
           {/* <button onClick={()=>RemoveFromCart(item.id)}>-</button>  */}
           <button onClick={() => handleCount('-')}>-</button>
         </div>
-        <div className="container">
-          <div className="container__count">
-            {count}
-          </div>
+        <div className="container__count">
+          {count}
         </div>
         <div className="container__button">
           <button onClick={() => handleCount('+')} >+</button>

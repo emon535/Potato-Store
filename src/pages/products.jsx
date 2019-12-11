@@ -32,8 +32,6 @@ export default function Products() {
                 <div key={index} className="container__item">
                   <ProductCard product={item}></ProductCard>
                   <ProductQuantity item={item}></ProductQuantity>
-                  <ProductCard product={item}></ProductCard>
-                  <ProductQuantity item={item}></ProductQuantity>
                 </div>
               </>
             })

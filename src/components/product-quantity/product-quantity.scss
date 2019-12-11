@@ -1,4 +1,5 @@
 .container {
+    
     display: flex;
     justify-content: center;
     align-content: flex-end;
@@ -12,9 +13,9 @@
         background: rgb(101, 104, 102);
     }
     &__count {
+        text-align: center;
         font-size: 16px;
-        padding: 0px 7px 0px 7px ;
-        margin: 7px;;
+        width: 3rem;
     }
 
 }

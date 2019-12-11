@@ -28,7 +28,6 @@
             @extend .shift;
             //border: 2px solid rgb(253, 253, 253);
             padding: 20px;
-            font-size: 39px;
             cursor: pointer;
             &:hover{
                 background-color: #F7F7F7;
@@ -41,7 +40,7 @@
         //    justify-content: flex-end;  
         padding: 20px;
         margin-left: auto;
-        font-size: 30px;
+       
             &:hover{
                 background-color: black;
                 color: white;
