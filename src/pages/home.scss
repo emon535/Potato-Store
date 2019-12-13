@@ -52,6 +52,7 @@ body {
 }
 
 .flex-item {
+    flex-direction: column;
     background: white;
     color: black;
     align-content: center;
@@ -60,16 +61,59 @@ body {
     display: flex;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    &__image{       
-        max-width: 50%;
-        flex-wrap: wrap;
+    &__item__imagebox {
+        border: 1px solid red;
     }
+  
     &__info {
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        text-align: center;
         padding: 20px;
     }
 }
 
 .flex-item:hover {
     // box-shadow: 0 4px 18px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+   
+.flex-item {
+
+    flex-direction: row;
+    &__imagebox {  
+        margin: 1rem;
+        // border: 1px solid gray;  
+        // box-shadow: 1px 3px 4px 1px gray;
+
+    }
+    &__info {
+        // flex-wrap: wrap;
+        text-align: left;
+        padding: 2rem;
+        width: 80%;
+        margin-left: 4rem;
+    }
+ }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+    
+.flex-item { 
+    flex-direction: row;
+    &__imagebox {  
+        margin: 1rem;
+        // box-shadow: 1px 3px 4px 1px gray;
+        width: 30%;
+    }
+    &__info {
+        // flex-wrap: wrap;
+        text-align: left;
+        padding: 2rem;
+        width: 50%;
+        margin-left: 4rem;
+    }
+ }
 }

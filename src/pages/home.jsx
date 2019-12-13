@@ -35,7 +35,9 @@ export default function Home({ itemss }) {
       </div>
       {items.map((item, index) => {
         return <div className="flex-item" key={index}>
+          <div className="flex-item__imagebox">
           <img className="flex-item__image" heigth="239" width="329" src={item.images[0].url} alt="" />
+          </div>
           <div className="flex-item__info">
             <h1>{item.name}</h1>
             <p>{item.description}</p>
